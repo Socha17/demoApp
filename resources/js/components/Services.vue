@@ -81,7 +81,7 @@ export default {
       }).catch()
     },
     getServiceData() {
-      this.items = [];
+      this.items = []
       axios.get(`/getServiceData/${this.selectedService.id}`)
       .then((res) => {
         if (res.data.status === 0) {

@@ -4,9 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require('./bootstrap')
 
-window.Vue = require('vue');
+window.Vue = require('vue')
 
 /**
  * The following block of code may be used to automatically register your
@@ -19,7 +19,7 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('app-container', require('./components/AppContainer.vue').default);
+Vue.component('app-container', require('./components/AppContainer.vue').default)
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -31,7 +31,7 @@ Vue.component('app-container', require('./components/AppContainer.vue').default)
  import VModal from 'vue-js-modal'
 
  Vue.use(VModal)
- Vue.use(require('vue-moment'));
+ Vue.use(require('vue-moment'))
  Vue.use(VueNoty)
 
  Vue.config.productionTip = false

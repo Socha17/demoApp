@@ -29,8 +29,8 @@ export default {
   methods: {
     login(name) {
       this.name = name
-      this.userLoggedIn = true;
-      this.$modal.hide('login');
+      this.userLoggedIn = true
+      this.$modal.hide('login')
       this.$noty.success("You have Logged In!")
     }
   }
